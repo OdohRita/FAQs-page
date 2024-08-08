@@ -1,0 +1,89 @@
+
+
+@font-face {
+    font-family: "WorkSansNormal";
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf');
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf') format('Variable');
+         
+  }
+@font-face {
+    font-family: "WorkSansItalic";
+    src: url('assets/fonts/WorkSans-Italic-VariableFont_wght.ttf');
+    src: url('assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('Italic');      
+  }
+
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Lightpink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Grayishpurplelight: hsla(293, 16%, 49%, 0.075);
+    --Darkpurple: hsl(292, 42%, 14%);
+    --vh: 100vh;
+}
+  *{
+    font-family: 'WorkSansNormal';
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: fixed;
+    height: 20vh;
+    background-color: var(--Lightpink);
+
+}
+main{
+    background-color: var(--White);
+    max-width: 500px;
+    min-width: 200px;
+    text-wrap: wrap;
+    border-radius: 5px;
+    margin: auto;
+    font-size: 14px;
+    margin-top: calc((1/6)*var(--vh));
+    padding:20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+}
+.quesContainer{
+    border-bottom: 1px solid var(--Grayishpurple);
+    padding-bottom: 2%;
+}
+h3{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 5%;
+}
+h3 img{
+    width:4%;
+    margin-right: 2%;
+}
+.questitle{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+
+}
+.questitle:hover{
+    color: var(--Darkpurple)
+
+}
+.questitle .minus{
+    display:none
+}
+.quesContent{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    color: var(--Grayishpurple);
+    display: none;
+}
